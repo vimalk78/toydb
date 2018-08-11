@@ -10,7 +10,7 @@ void prompt(toy::IToyDB *db)
     bool running = true;
     while (running)
     {
-        cout << "\n put/get/index/values/init/quit \n >> ";
+        cout << "\n put/get/index/values/init/compact/quit \n >> ";
         string command;
         std::getline(std::cin, command);
         istringstream iss(command);
@@ -47,6 +47,11 @@ void prompt(toy::IToyDB *db)
         {
             simpletoydb::CSimpleToydb *sdb = dynamic_cast<simpletoydb::CSimpleToydb *>(db);
             sdb->printvalues();
+        }
+        if(cmdname == "compact")
+        {
+            simpletoydb::CSimpleToydb *sdb = dynamic_cast<simpletoydb::CSimpleToydb *>(db);
+            sdb->compact();
         }
         if (cmdname == "quit")
         {

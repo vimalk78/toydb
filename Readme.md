@@ -10,9 +10,10 @@ This is a toydb, based on Chapter 3 : "Designing Data Intensive Applications" by
   - the get operation seeks to the offset and reads the value
   - file format : sequence\<entry\>'\n'
   - entry format : \<keysize\>\<keycontents\>\<valuesize\>\<valuecontents\>
+  - support compaction
 
 ### TODO:
-  - support compaction, delete older key values
+  - delete older key values
   - support delete, put tombstone to deleted value
   - support multi segments of db file
   - support SSTable, LSM tree
