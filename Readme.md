@@ -9,7 +9,7 @@ This is a toydb, based on Chapter 3 : "Designing Data Intensive Applications" by
   - an in memory index stores the offset of the value
   - the get operation seeks to the offset and reads the value
   - file format : sequence\<entry\>'\n'
-  - entry format : \<keysize\>\<keycontents\>\<valuesize\>\<valuecontents\>
+  - entry format : `\<keysize\>\<keycontents\>\<valuesize\>\<valuecontents\>`
   - support compaction
 
 ### TODO:
