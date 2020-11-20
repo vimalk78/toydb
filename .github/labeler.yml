@@ -1,4 +1,4 @@
 dockerfile:
-  - ./Dockerfile
+  - Dockerfile
 code:
   - src/**/*
