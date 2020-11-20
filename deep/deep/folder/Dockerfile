@@ -2,5 +2,4 @@ FROM scratch
 WORKDIR /
 ADD Readme.md .
 LABEL io.version="v0.0.1"
-#hope this works as well
-##last test
+#hope this works too
